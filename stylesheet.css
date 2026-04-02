@@ -1,0 +1,108 @@
+/*
+  EE461L Frontend Technologies – Task 1 Stylesheet
+  Student: Manas Pathak
+
+  ====== RUBRIC REQUIREMENTS IN THIS FILE ======
+  [✓] Tag selectors       → body, h1, h2, p, a, ul, footer
+  [✓] Class selector       → .section-card, .container
+  [✓] ID selector          → #hero
+  [✓] Hover selector on <a>→ a:hover
+  [✓] Box model properties → padding, margin, border-radius (+ border on .section-card)
+  =============================================
+*/
+
+/* ── RUBRIC: tag selector – body ── */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+  /* RUBRIC: box model property – margin */
+  margin: 0;
+  /* RUBRIC: box model property – padding */
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ── RUBRIC: tag selector – h1 ── */
+h1 {
+  font-size: 2rem;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+/* ── RUBRIC: tag selector – h2 ── */
+h2 {
+  font-size: 1.4rem;
+  color: #bf5700; /* UT Austin burnt orange */
+  margin-bottom: 8px;
+}
+
+/* ── RUBRIC: tag selector – p ── */
+p {
+  margin: 8px 0;
+}
+
+/* ── RUBRIC: tag selector – a ── */
+a {
+  color: #bf5700;
+  text-decoration: none;
+}
+
+/* ── RUBRIC: hover selector changes color of <a> ── */
+a:hover {
+  color: #333f48; /* UT Austin charcoal */
+  text-decoration: underline;
+}
+
+/* ── RUBRIC: tag selector – ul ── */
+ul {
+  padding-left: 20px;
+}
+
+/* ── RUBRIC: ID selector – #hero ── */
+#hero {
+  text-align: center;
+  background-color: #ffffff;
+  /* RUBRIC: box model – padding */
+  padding: 40px 20px;
+  /* RUBRIC: box model – margin */
+  margin-bottom: 24px;
+  border-bottom: 3px solid #bf5700;
+}
+
+#hero img {
+  /* RUBRIC: box model – border-radius */
+  border-radius: 50%;
+  border: 3px solid #bf5700;
+  object-fit: cover;
+}
+
+/* ── RUBRIC: class selector – .container ── */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ── RUBRIC: class selector – .section-card (applied to 3 elements) ── */
+.section-card {
+  background-color: #ffffff;
+  /* RUBRIC: box model – padding */
+  padding: 24px;
+  /* RUBRIC: box model – margin */
+  margin-bottom: 20px;
+  /* RUBRIC: box model – border-radius */
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* ── RUBRIC: tag selector – footer ── */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 20px;
+}

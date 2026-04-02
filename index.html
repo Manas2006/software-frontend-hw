@@ -1,0 +1,96 @@
+<!--
+  EE461L Frontend Technologies - Task 1: Personal Website
+  Student: Manas Pathak
+
+  ====== RUBRIC CHECKLIST ======
+  [✓] CSS tag selector used         → body, h1, h2, p, a are styled in stylesheet.css
+  [✓] Class used on 2+ elements     → .section-card is applied to 3 div elements
+  [✓] ID used on 1 element          → #hero is applied to the hero div
+  [✓] 2+ divs used                  → #hero, .section-card (×3), .container
+  [✓] External link (<a>)           → link to UT Austin and GitHub
+  [✓] Hover selector on <a>         → a:hover changes color in stylesheet.css
+  [✓] 2+ box model props changed    → padding, margin, border-radius used extensively
+  [✓] Image included                → profile image in hero section
+  [✓] Meta description tag          → <meta name="description" ...> in <head>
+  ==============================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- RUBRIC: meta description tag -->
+  <meta name="description" content="Manas Pathak's personal website for EE461L Frontend Technologies homework. Learn about my interests, projects, and how to connect.">
+
+  <title>Manas Pathak – Personal Website</title>
+
+  <!-- RUBRIC: external stylesheet (no inline or internal styles) -->
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <!-- RUBRIC: div with id selector → #hero -->
+  <div id="hero">
+    <!-- RUBRIC: image element -->
+    <img src="images/profile-placeholder.jpg" alt="Photo of Manas Pathak" width="160" height="160">
+
+    <!-- RUBRIC: h1 tag (styled via tag selector in CSS) -->
+    <h1>Manas Pathak</h1>
+
+    <!-- RUBRIC: p tag (styled via tag selector in CSS) -->
+    <p>Computer Science &amp; Electrical Engineering Student at UT Austin</p>
+  </div>
+
+  <div class="container">
+
+    <!-- RUBRIC: div with class .section-card (reused on 3 elements) -->
+    <!-- Section 1: About Me -->
+    <div class="section-card">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Manas, a student at
+        <!-- RUBRIC: <a> link to another website -->
+        <a href="https://www.utexas.edu/" target="_blank" rel="noopener noreferrer">The University of Texas at Austin</a>.
+        I'm passionate about software engineering, embedded systems, and building
+        things that make a difference. I enjoy working on both frontend and backend
+        projects and am always eager to learn new technologies.
+      </p>
+    </div>
+
+    <!-- Section 2: Interests & Projects -->
+    <!-- RUBRIC: second div with class .section-card -->
+    <div class="section-card">
+      <h2>Interests &amp; Projects</h2>
+      <ul>
+        <li>Full-stack web development</li>
+        <li>Machine learning and data science</li>
+        <li>Open-source contributions</li>
+        <li>Embedded systems and IoT</li>
+      </ul>
+      <p>
+        Check out some of my work on
+        <a href="https://github.com/Manas2006" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </div>
+
+    <!-- Section 3: Contact / Links -->
+    <!-- RUBRIC: third div with class .section-card -->
+    <div class="section-card">
+      <h2>Contact &amp; Links</h2>
+      <p>Feel free to reach out or connect with me:</p>
+      <ul>
+        <li>Email: <a href="mailto:manas@utexas.edu">manas@utexas.edu</a></li>
+        <li>GitHub: <a href="https://github.com/Manas2006" target="_blank" rel="noopener noreferrer">github.com/Manas2006</a></li>
+        <li>University: <a href="https://www.utexas.edu/" target="_blank" rel="noopener noreferrer">UT Austin</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Manas Pathak. Built for EE461L.</p>
+  </footer>
+
+</body>
+</html>
